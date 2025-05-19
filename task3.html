@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TASK</title>
+    <link rel="stylesheet" href="./global.css">
+
+</head>
+<body>
+    <div id="divbar">
+    <img src="https://cdn.pixabay.com/photo/2023/09/14/10/27/face-logo-8252748_640.png" height="50px">
+    <ul>
+        <li><a href="task1.html">TASK1</a></li>
+        <li><a href="task2.html">TASK2</a></li>
+        <li><a href="task3.html">TASK3</a></li>
+        <li><a href="task4.html">TASK4</a></li>
+    </ul>
+    </div>
+    <div id="bb">
+    <div class="btn">
+        <div onclick="start()" >start</div>
+    </div>
+    <div class="btn">
+        <div onclick="stop()">stop</div> 
+    </div>
+    <div class="btn">
+         <div onclick="reset()">reset</div>
+    </div>
+    </div>
+    <p id="result"></p>
+</body>
+<script>
+   let seconds=0;
+   let timer=null;
+   function start(){
+    timer=setInterval(()=>{
+        seconds++;
+        document.getElementById("result").innerText=seconds;
+    },1000)
+   }
+   function stop(){
+    clearInterval(timer);
+   }
+   function reset(){
+    clearInterval(timer);
+    timer=null;
+    seconds=0;
+    document.getElementById('result').innerText=seconds;
+   }
+</script>
+</html>

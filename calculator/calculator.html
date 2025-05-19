@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="calculator">
+    <p="title">
+    <legend><strong>CALCULATOR</strong></legend>
+    </p>
+    <input type="text" class="display" id="display" disabled />
+    <div class="buttons">
+      <button onclick="typing('7')">7</button>
+      <button onclick="typing('8')">8</button>
+      <button onclick="typing('9')">9</button>
+      <button onclick="typing('/')">/</button>
+
+      <button onclick="typing('4')">4</button>
+      <button onclick="typing('5')">5</button>
+      <button onclick="typing('6')">6</button>
+      <button onclick="typing('*')">*</button>
+
+      <button onclick="typing('1')">1</button>
+      <button onclick="typing('2')">2</button>
+      <button onclick="typing('3')">3</button>
+      <button onclick="typing('-')">-</button>
+
+      <button onclick="typing('0')">0</button>
+      <button onclick="typing('.')">.</button>
+      <button onclick="calculate()">=</button>
+      <button onclick="typing('+')">+</button>
+
+      <button class="clear" onclick="clearDisplay()">C</button>
+    </div>
+  </div>
+  <div id="for">
+    © Every problem has solution
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+</body>
+<script>
+let display = document.getElementById("display");
+
+function typing(value) {
+  display.value += value;
+}
+
+function clearDisplay() {
+  display.value = "";
+}
+
+function calculate() {
+  try {
+    display.value = eval(display.value);
+  } catch (e) {
+    display.value = "Error";
+  }
+}
+</script>
+</html>

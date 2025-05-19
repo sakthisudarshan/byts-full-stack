@@ -1,0 +1,78 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url(https://i.pinimg.com/736x/8c/43/64/8c43645fe8d0ac164a6925448be32858.jpg);
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.calculator {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: inset 2px -1px 7px rgb(0, 0, 0);
+  width: 260px;
+}
+
+.display {
+  width: 100%;
+  height: 50px;
+  font-size: 1.5rem;
+  text-align: right;
+  margin-bottom: 15px;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+
+}
+
+button {
+  height: 50px;
+  font-size: 1.2rem;
+  border: 0.5px solid rgba(0, 0, 0, 0.066);
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #f1f3f4;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #dcdfe1;
+}
+
+button.operator {
+  background-color: #f9a825;
+  color: white;
+}
+
+button.equal {
+  background-color: #4caf50;
+  color: white;
+}
+
+button.clear {
+  grid-column: span 4;
+  background-color:rgb(114 76 40);
+  color: white;
+}
+#for{
+    position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  text-transform: capitalize;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 14px;
+}

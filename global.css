@@ -1,0 +1,65 @@
+ul{
+    list-style-type: none;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+    display: flex;
+    margin: auto;
+    
+}
+li{
+    padding: 10px;
+    border: 2px solid red;
+    margin: 10px;
+}
+ a{
+    color: black;
+    text-decoration: none;
+ }
+ #divbar{
+    display: flex;
+ }
+#divbar1 {
+  color: red;
+  background-color: black;
+  padding: 8px;
+  border: 2px solid red;
+  display: inline-block;  /* 👈 Makes the box hug the content */
+  border-radius: 6px;     /* 👈 Optional: rounded corners */
+  font-family: monospace; /* 👈 Optional: for a compact "boxy" look */
+}
+#b1{
+  display: flex;
+  justify-content: space-around;
+
+}
+#value{
+  color: chocolate;
+}
+#t2{
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+.btn{
+  display: flex;
+  width: fit-content;
+  padding:10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-width: 9px;
+  border-radius: 0px;
+  margin: 5px;
+  box-shadow: 2px 2px 2px grey;
+  transition: 0.5;  
+}
+.btn:hover{
+  box-shadow: 4px 4px 4px gray;
+}
+.btn:active{
+  box-shadow: 4px 4px 4px orange;
+}
+#bb{
+  display: flex;
+  justify-content: space-around;
+}

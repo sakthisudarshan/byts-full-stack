@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: initial ;
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.STOPWATCH {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#shape {
+    background-image: image-set("C:\Users\SAKTHI SUDHARSHAN\Pictures\Screenshot 2025-05-18 232933.jpg");
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+}
+
+#display {
+    font-size: 2em;
+    font-weight: bold;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.buttons button {
+    margin: 0 5px;
+    padding: 10px 15px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#startBtn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#stopBtn {
+    background-color: #f44336;
+    color: white;
+}
+
+#resetBtn {
+    background-color: #2196F3;
+    color: white;
+}
